@@ -17,4 +17,7 @@ while True:
     entrada = input('Deseja continuar [S/N]: ').upper()
     if entrada != 'S':
         print(f'As matrizes informadas foram: \n{matrizes}')
+
+        for i, matriz in enumerate(matrizes):
+            print(f'A matriz na posição {i}: \n{matrizes}')
         break

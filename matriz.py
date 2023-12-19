@@ -11,7 +11,7 @@ while True:
     for i in range(numLinhas):
         linhas = []
         for j in range(numColunas):
-            elemento = int(input(f'm{[i]}{[j]}: '))
+            elemento = float(input(f'm{[i]}{[j]}: '))
             linhas.append(elemento)
         m.append(linhas)
     #np.array. GARANTE QUE A MATRIZ SEJA UMA MATRIZ NA CONFIGURAÇÃO NUMPY
@@ -28,4 +28,13 @@ A = matrizes[primeiraEntrada]
 segundaEntrada = int(input('Informe uma posição para definir a MATRIZ B: '))
 B = matrizes[segundaEntrada]
 
-print(f'MATRIZ A:\n\n{A}\n\nMATRIZ B:\n\n{B}\n')
+# shape, Utiliza para ver Núm. Linhas e Núm.Colunas de um array, indica o tamanho de cada dimensão da matriz(m,n)
+# np.dot, É uma função do numpy para manipulação de array e matrizes. Realiza a multiplicação de matrizes...
+
+if A.shape[1] != B.shape[0]:
+    print('O Número de colunas da primeira matriz é diferente do número de linhas da segunda matriz\n "A MULTIPLICAÇÃO NÃO É POSSÍVEL"\n')
+else:
+    resultado = np.dot(A,B)
+    print(f'A multiplicação entre as MATRIZES A * B = {resultado}')
+
+    

@@ -6,6 +6,10 @@ while True:
     numLinhas = int(input('Informe o número de Linhas: '))
     numColunas = int(input('Infrome o número de Colunas: '))
 
+    if numLinhas <= 0 or numColunas <=0:
+        print('Para gerar uma MATRIZ, inicie inserindo a partir do (Número 1),\n'
+              'para Número de Linhas e Número de Colunas\n') 
+
     m = []
 
     for i in range(numLinhas):
@@ -14,7 +18,9 @@ while True:
             elemento = float(input(f'm{[i]}{[j]}: '))
             linhas.append(elemento)
         m.append(linhas)
+
     #np.array. GARANTE QUE A MATRIZ SEJA UMA MATRIZ NA CONFIGURAÇÃO NUMPY
+    
     matrizes.append(np.array(m))                            
     entrada = input('Deseja continuar [S/N]: ').upper()
 

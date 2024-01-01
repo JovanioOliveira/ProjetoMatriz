@@ -21,9 +21,14 @@ def cadastrarMatriz():
         # numLinhas = int(input('Informe o número de Linhas: '))
         # numColunas = int(input('Infrome o número de Colunas: '))
 
-        numLinhas = numeroInteiro('\nInforme o número de Linhas: ')
+        # Variável recebe a função para certificar que o número de linha e coluna inserido seja um número inteiro e caso
+        # e Caso não seja, solicita que seja insrido valor válido#
+
+        numLinhas = numeroInteiro('\nInforme número de Linhas: ')
         numColunas = numeroInteiro('Informe número de Colunas: ')
         print()
+
+        # Definido uma função para tratar erro se caso a entrada de linha e coluna não for um número inteiro
 
         # if numLinhas <= 0 or numColunas <=0:
         #     print('\nPara gerar uma MATRIZ, inicie inserindo a partir do (Número 1),\n'
@@ -84,7 +89,7 @@ def multiplicacaoMatrizes(A, B):
 
 def somaMatrizes(A, B):
     if A.shape != B.shape:
-        print('\As matrizes precisam ter o mesmo número de linhas e colunas para serem somadas')
+        print('\nAs matrizes precisam ter o mesmo número de linhas e colunas para serem somadas')
     else:
         print(f'Matriz A = {A.shape}: \n{A}\n')
         print(f'Matriz B = {B.shape}: \n{B}\n')
@@ -140,9 +145,11 @@ def menu():
             print('Programa Encerrado.\n')
             break
         else:
-            print('Opção Inválida. Tente novamente')       
+            print('Opção Inválida. Tente novamente')
 
-if __name__ == '__main__':
-    menu()
+#CRIADO PASTA MAIN PARA CHAMAR OPÇÕES MENU
+
+# if __name__ == '__main__':
+#     menu()
 
  

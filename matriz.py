@@ -37,17 +37,29 @@ B = matrizes[segundaEntrada]
 # shape, Utiliza para ver Núm. Linhas e Núm.Colunas de um array, indica o tamanho de cada dimensão da matriz(m,n)
 # np.dot, É uma função do numpy para manipulação de array e matrizes. Realiza a multiplicação de matrizes...
 
+# Multiplicação entre as Matrizes
+
 # if A.shape[1] != B.shape[0]:
 #     print('\nO Número de colunas da primeira matriz é diferente do número de linhas da segunda matriz\n "A MULTIPLICAÇÃO NÃO É POSSÍVEL"\n')
 # else:
 #     resultado = np.dot(A,B)
 #     print(f'\nA multiplicação entre as MATRIZES A * B : {resultado.shape} \n{resultado}\n')
 
-# soma matrizes
+# Soma entre as matrizes
+
+# if A.shape != B.shape:
+#     print('\As matrizes precisam ter o mesmo número de linhas e coluans para serem somadas')
+# else:
+#     soma = A + B
+#     print(f'O Resultado da SOMA entre as matrizes A + B: \n{soma}') 
+
+# Subtração entre as atrizes
 
 if A.shape != B.shape:
-    print('\As matrizes tem que ter o mesmo número de linhas e coluans para serem somadas')
+    print('\nAs matrizes precisam ter o mesmo níumero de linhas e colunas para serem substraídas')
 else:
-    soma = A + B
-    print(f'O Resultado da soma entre as matrizes A + B: \n{soma}') 
+    subtracao = A - B
+    print(f'O Resultado da SUBTRAÇÃO entre as matrizes A - B: \n{subtracao}')
+
+
    

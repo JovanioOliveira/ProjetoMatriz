@@ -16,6 +16,7 @@ def numeroInteiro(mensagem):
             print('Favor insira um número inteiro válido.')
 
 def cadastrarMatriz():
+
     while True:
         # numLinhas = int(input('Informe o número de Linhas: '))
         # numColunas = int(input('Infrome o número de Colunas: '))
@@ -101,7 +102,7 @@ def subtracaoMatrizes(A,B):
         print(f'Matriz B = {B.shape}: \n{B}\n')
 
         subtracao = A - B
-        print(f'O Resultado da SUBTRAÇÃO entre as matrizes A - B: {subtracao.shape} {subtracao}')
+        print(f'O Resultado da SUBTRAÇÃO entre as matrizes A - B: {subtracao.shape} \n{subtracao}')
 
 # Definição de Menu
         
@@ -139,8 +140,7 @@ def menu():
             print('Programa Encerrado.\n')
             break
         else:
-            print('Opção Inválida. Tente novamente')
-       
+            print('Opção Inválida. Tente novamente')       
 
 if __name__ == '__main__':
     menu()

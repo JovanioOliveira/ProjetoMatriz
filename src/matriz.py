@@ -68,6 +68,9 @@ def selecionarMatriz():
     segundaEntrada = int(input('Informe uma posição para definir  MATRIZ B: '))
     B = matrizes[segundaEntrada]
 
+    A = np.array(A)
+    b = np.array(B)
+
     return A, B
 
 # shape, Utiliza para ver Núm. Linhas e Núm.Colunas de um array, indica o tamanho de cada dimensão da matriz(m,n)

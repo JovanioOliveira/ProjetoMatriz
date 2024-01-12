@@ -4,16 +4,21 @@ matrizes = []
 
 # Tratamento para inserir número linhas e número de coluna válido
 
-def numeroInteiro(mensagem):
+def numeroInteiro(mensagem, entrada = None):
     while True:
         try:
-            numero = int(input(mensagem))
+            if entrada is None:
+                numero = int(input(mensagem))
+            else:
+                numero = int(entrada)
+
+            # numero = int(input(mensagem))
             if numero <= 0 or numero == -0:
                 print('Favor insira um número inteiro maior que zero')
                 continue
             return numero
         except ValueError:
-            print('Favor insira um número inteiro válido.')
+            raise ValueError('Favor insira um número inteiro válido.')
 
 def cadastrarMatriz():
 

@@ -1,0 +1,27 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# pytest cache
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Numpy/others (se gerar arquivos binários)
+*.npy
+
+# Arquivos do usuário / OneDrive / Documentos locais (evite commitar)
+*.log
+*.sqlite3
+*.db

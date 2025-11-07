@@ -29,7 +29,7 @@ def test_numeroInteiro_valido(monkeypatch):
 
 def test_numeroInteiro_invalido():
     with pytest.raises(ValueError):
-        numeroInteiro("invalido")
+        numeroInteiro("invalido", entrada = "invalido")
 
 # Linha 38 -    'mocker' - Simula comportamento, 'capsys' - Captura a saída padrão e de erro
 # Linha 39 -    Substitui a função input, por uma falsa fornecida pelo mocker. 

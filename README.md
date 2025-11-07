@@ -167,7 +167,7 @@ _________________________________________________________________________
 
 🧾 Licença
 
-Este projeto é de uso educacional e acadêmico, desenvolvido para a disciplina Programação Orientada a Objetos (Prof. Jader) no curso de Análise e Desenvolvimento de Sistemas - IFPI (Campus Picos).
+Este projeto é de uso educacional e acadêmico, desenvolvido para a disciplina Programação Orientada a Objetos (Prof. João Paulo) no curso de Análise e Desenvolvimento de Sistemas - IFPI (Campus Picos).
 
 👨‍💻 Autor
 
